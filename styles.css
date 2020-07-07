@@ -20,7 +20,7 @@ img {
 
 #bodytext {
 	margin: auto;
-	width: 50%;
+	max-width: 50rem;
 }
 
 
