@@ -1,5 +1,21 @@
+html {
+	min-height: 101%;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	margin: 0;
+	border: 0;
+}
+
+div {
+	margin: 0;
+	border: 0;
+}
+
+img {
+	width: 100%;
 }
 
 #bodytext {
@@ -7,22 +23,27 @@ body {
 	width: 50%;
 }
 
-a:link {
+
+#header a:link,
+#header a:visited,
+#header a:active {
 	color: #000000;
 	text-decoration: none;
 }
 
-a:visited {
-	color: #000000;
-	text-decoration: none;
-}
-
-a:hover {
+#header a:hover {
 	color: #777777;
 	text-decoration: none;
 }
 
-a:active {
-	color: #000000;
+#innertext a:link,
+#innertext a:visited,
+#innertext a:active {
+	color: #0000BB;
+	text-decoration: none;
+}
+
+#innertext a:hover {
+	color: #777777;
 	text-decoration: none;
 }
