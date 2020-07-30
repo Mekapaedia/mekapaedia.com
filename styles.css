@@ -40,11 +40,22 @@ h2 {
 	text-decoration: none;
 }
 
+#mainlinks a:link,
+#mainlinks a:visited,
+#mainlinks a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+#mainlinks a:hover {
+	color: #575757;
+	text-decoration: none;
+}
+
 #innertext a:link,
 #innertext a:visited,
 #innertext a:active {
-	color: #8A8AFF;
-	text-decoration: none;
+	color: #000000;
 }
 
 #innertext a:hover {
