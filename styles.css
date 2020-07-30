@@ -18,6 +18,10 @@ img {
 	width: 100%;
 }
 
+h2 {
+	font-size: 1.3rem;
+}
+
 #bodytext {
 	margin: auto;
 	max-width: 50rem;
