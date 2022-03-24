@@ -1,64 +1,67 @@
 html {
-	min-height: 101%;
+    min-height: 101%;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
-	margin: 0;
-	border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    border: 0;
 }
 
 div {
-	margin: 0;
-	border: 0;
+    margin: 0;
+    border: 0;
 }
 
 img {
-	width: 100%;
+    width: 100%;
 }
 
 h2 {
-	font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 #bodytext {
-	margin: auto;
-	max-width: 50rem;
+    margin: auto;
+    max-width: 50rem;
 }
 
+th {
+    text-align: left;
+}
 
 #header a:link,
 #header a:visited,
 #header a:active {
-	color: #000000;
-	text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 #header a:hover {
-	color: #575757;
-	text-decoration: none;
+    color: #575757;
+    text-decoration: none;
 }
 
 #mainlinks a:link,
 #mainlinks a:visited,
 #mainlinks a:active {
-	color: #000000;
-	text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 #mainlinks a:hover {
-	color: #575757;
-	text-decoration: none;
+    color: #575757;
+    text-decoration: none;
 }
 
 #innertext a:link,
 #innertext a:visited,
 #innertext a:active {
-	color: #000000;
+    color: #000000;
 }
 
 #innertext a:hover {
-	color: #575757;
-	text-decoration: none;
+    color: #575757;
+    text-decoration: none;
 }

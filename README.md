@@ -1,1 +1,0 @@
-# mekapaedia.com
