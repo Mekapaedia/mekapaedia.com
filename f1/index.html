@@ -25,7 +25,7 @@ The ratings system effectly treats each race as a round-robin tournament: so eac
 The final score is an average of the running average Glicko-2 score, peak Glicko-2 score, and most recent (which is important as Glicko-2 is intended to be a convergent algorithm) Glicko-2 score. This seems to give a good mix of rewarding consistency, but still rewarding rare exceptional performances (like Giancarlo Baghetti). Qualifying, Non-Championship races, and races in other series (like touring cars or Le Mans) are not counted as the data isn't readily available.<br><br>
 The source for the data is the excellent <a href="http://ergast.com/mrd/">Ergast F1 Developer API</a>, which is well worth a look if you are interested in F1 data.<br><br>
 <b>Important note:</b> I am not a statistician nor a mathematician. I cannot guarantee <i>any</i> statistical properties regarding these results. I just like data analysis and can write small python scripts. Take them with a grain of salt.<br><br>
-Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br><br>
+Data current as of 6:27:35 AM (UTC) Tue Apr 4, 2023 (2023 Australian Grand Prix)<br><br>
 <table style="width:100%">
 <tr>
 <th>Position</th>
@@ -38,13 +38,21 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <tr>
 <td>1</td>
 <td>Lewis Hamilton</td>
-<td>1974.53</td>
-<td>1967.29</td>
+<td>1912.28</td>
+<td>1783.18</td>
 <td>2119.75</td>
-<td>1836.55</td>
+<td>1833.93</td>
 </tr>
 <tr>
 <td>2</td>
+<td>Max Verstappen</td>
+<td>1911.63</td>
+<td>2010.99</td>
+<td>2010.99</td>
+<td>1712.92</td>
+</tr>
+<tr>
+<td>3</td>
 <td>Luigi Fagioli</td>
 <td>1878.84</td>
 <td>1878.39</td>
@@ -52,7 +60,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1828.96</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>Reg Parnell</td>
 <td>1870.46</td>
 <td>1854.93</td>
@@ -60,7 +68,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1870.19</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>Nico Rosberg</td>
 <td>1869.41</td>
 <td>1997.87</td>
@@ -68,7 +76,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1612.51</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>Nino Farina</td>
 <td>1849.07</td>
 <td>1802.38</td>
@@ -76,7 +84,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1772.75</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>Juan Fangio</td>
 <td>1843.68</td>
 <td>1848.47</td>
@@ -84,20 +92,12 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1773.96</td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>Jim Clark</td>
 <td>1794.92</td>
 <td>1752.47</td>
 <td>1930.09</td>
 <td>1702.22</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Max Verstappen</td>
-<td>1791.01</td>
-<td>1769.62</td>
-<td>1920.63</td>
-<td>1682.78</td>
 </tr>
 <tr>
 <td>9</td>
@@ -149,14 +149,6 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>15</td>
-<td>Valtteri Bottas</td>
-<td>1776.27</td>
-<td>1675.46</td>
-<td>1957.18</td>
-<td>1696.17</td>
-</tr>
-<tr>
-<td>16</td>
 <td>Mike Hawthorn</td>
 <td>1763.84</td>
 <td>1743.05</td>
@@ -164,12 +156,20 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1693.62</td>
 </tr>
 <tr>
-<td>17</td>
+<td>16</td>
 <td>Richie Ginther</td>
 <td>1763.46</td>
 <td>1733.16</td>
 <td>1815.48</td>
 <td>1741.74</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Sergio Pérez</td>
+<td>1761.01</td>
+<td>1855.25</td>
+<td>1859.02</td>
+<td>1568.76</td>
 </tr>
 <tr>
 <td>18</td>
@@ -189,6 +189,14 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>20</td>
+<td>Sebastian Vettel</td>
+<td>1741.44</td>
+<td>1515.75</td>
+<td>2010.52</td>
+<td>1698.04</td>
+</tr>
+<tr>
+<td>21</td>
 <td>Ignazio Giunti</td>
 <td>1741.17</td>
 <td>1727.06</td>
@@ -196,7 +204,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1743.45</td>
 </tr>
 <tr>
-<td>21</td>
+<td>22</td>
 <td>Sergio Mantovani</td>
 <td>1738.97</td>
 <td>1703.79</td>
@@ -204,20 +212,12 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1747.76</td>
 </tr>
 <tr>
-<td>22</td>
+<td>23</td>
 <td>Alain Prost</td>
 <td>1731.5</td>
 <td>1718.69</td>
 <td>1849.36</td>
 <td>1626.46</td>
-</tr>
-<tr>
-<td>23</td>
-<td>Sebastian Vettel</td>
-<td>1723.55</td>
-<td>1444.77</td>
-<td>2010.52</td>
-<td>1715.37</td>
 </tr>
 <tr>
 <td>24</td>
@@ -269,6 +269,14 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>30</td>
+<td>Fernando Alonso</td>
+<td>1695.77</td>
+<td>1631.27</td>
+<td>1897.86</td>
+<td>1558.19</td>
+</tr>
+<tr>
+<td>31</td>
 <td>Bruce McLaren</td>
 <td>1694.19</td>
 <td>1579.88</td>
@@ -276,15 +284,23 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1664.34</td>
 </tr>
 <tr>
-<td>31</td>
+<td>32</td>
 <td>Charles Leclerc</td>
-<td>1693.14</td>
-<td>1694.71</td>
-<td>1794.8</td>
-<td>1589.93</td>
+<td>1693.3</td>
+<td>1649.62</td>
+<td>1810.77</td>
+<td>1619.5</td>
 </tr>
 <tr>
-<td>32</td>
+<td>33</td>
+<td>Valtteri Bottas</td>
+<td>1690.96</td>
+<td>1440.37</td>
+<td>1957.18</td>
+<td>1675.32</td>
+</tr>
+<tr>
+<td>34</td>
 <td>Umberto Maglioli</td>
 <td>1684.59</td>
 <td>1644.09</td>
@@ -292,7 +308,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1673.55</td>
 </tr>
 <tr>
-<td>33</td>
+<td>35</td>
 <td>Denny Hulme</td>
 <td>1683.46</td>
 <td>1598.68</td>
@@ -300,7 +316,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1657.41</td>
 </tr>
 <tr>
-<td>34</td>
+<td>36</td>
 <td>Jody Scheckter</td>
 <td>1680.05</td>
 <td>1554.23</td>
@@ -308,7 +324,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1642.65</td>
 </tr>
 <tr>
-<td>35</td>
+<td>37</td>
 <td>Hans Herrmann</td>
 <td>1678.09</td>
 <td>1623.85</td>
@@ -316,15 +332,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1676.38</td>
 </tr>
 <tr>
-<td>36</td>
-<td>Carlos Sainz</td>
-<td>1676.74</td>
-<td>1745.77</td>
-<td>1745.77</td>
-<td>1538.66</td>
-</tr>
-<tr>
-<td>37</td>
+<td>38</td>
 <td>Giancarlo Baghetti</td>
 <td>1674.6</td>
 <td>1530.27</td>
@@ -332,7 +340,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1543.39</td>
 </tr>
 <tr>
-<td>38</td>
+<td>39</td>
 <td>Mark Webber</td>
 <td>1672.69</td>
 <td>1662.85</td>
@@ -340,20 +348,12 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1512.88</td>
 </tr>
 <tr>
-<td>39</td>
+<td>40</td>
 <td>Graham Hill</td>
 <td>1672.01</td>
 <td>1530.71</td>
 <td>1898.62</td>
 <td>1586.7</td>
-</tr>
-<tr>
-<td>40</td>
-<td>Fernando Alonso</td>
-<td>1670.82</td>
-<td>1555.67</td>
-<td>1897.86</td>
-<td>1558.92</td>
 </tr>
 <tr>
 <td>41</td>
@@ -381,11 +381,11 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>44</td>
-<td>Daniel Ricciardo</td>
-<td>1659.74</td>
-<td>1542.42</td>
-<td>1866.51</td>
-<td>1570.3</td>
+<td>Carlos Sainz</td>
+<td>1666.37</td>
+<td>1676.55</td>
+<td>1764.36</td>
+<td>1558.21</td>
 </tr>
 <tr>
 <td>45</td>
@@ -445,14 +445,6 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>52</td>
-<td>Lando Norris</td>
-<td>1645.74</td>
-<td>1594.32</td>
-<td>1754.4</td>
-<td>1588.49</td>
-</tr>
-<tr>
-<td>53</td>
 <td>Jack Brabham</td>
 <td>1645.04</td>
 <td>1534.42</td>
@@ -460,7 +452,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1588.4</td>
 </tr>
 <tr>
-<td>54</td>
+<td>53</td>
 <td>Louis Rosier</td>
 <td>1644.44</td>
 <td>1557.08</td>
@@ -468,15 +460,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1575.81</td>
 </tr>
 <tr>
-<td>55</td>
-<td>Alexander Albon</td>
-<td>1644.36</td>
-<td>1642.81</td>
-<td>1682.88</td>
-<td>1607.38</td>
-</tr>
-<tr>
-<td>56</td>
+<td>54</td>
 <td>François Cevert</td>
 <td>1643.74</td>
 <td>1590.76</td>
@@ -484,7 +468,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1578.63</td>
 </tr>
 <tr>
-<td>57</td>
+<td>55</td>
 <td>Eric Brandon</td>
 <td>1642.56</td>
 <td>1638.5</td>
@@ -492,7 +476,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1640.42</td>
 </tr>
 <tr>
-<td>58</td>
+<td>56</td>
 <td>Gijs van Lennep</td>
 <td>1640.85</td>
 <td>1624.17</td>
@@ -500,7 +484,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1642.33</td>
 </tr>
 <tr>
-<td>59</td>
+<td>57</td>
 <td>Tony Brise</td>
 <td>1640.7</td>
 <td>1554.59</td>
@@ -508,7 +492,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1661.48</td>
 </tr>
 <tr>
-<td>60</td>
+<td>58</td>
 <td>Mike Spence</td>
 <td>1640.59</td>
 <td>1591.56</td>
@@ -516,7 +500,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1635.76</td>
 </tr>
 <tr>
-<td>61</td>
+<td>59</td>
 <td>Mike Hailwood</td>
 <td>1640.08</td>
 <td>1547.59</td>
@@ -524,7 +508,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1621.67</td>
 </tr>
 <tr>
-<td>62</td>
+<td>60</td>
 <td>Masten Gregory</td>
 <td>1639.55</td>
 <td>1498.34</td>
@@ -532,7 +516,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1623.01</td>
 </tr>
 <tr>
-<td>63</td>
+<td>61</td>
 <td>Jackie Oliver</td>
 <td>1639.33</td>
 <td>1518.19</td>
@@ -540,7 +524,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1548.27</td>
 </tr>
 <tr>
-<td>64</td>
+<td>62</td>
 <td>Olivier Gendebien</td>
 <td>1637.72</td>
 <td>1620.13</td>
@@ -548,7 +532,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1640.13</td>
 </tr>
 <tr>
-<td>65</td>
+<td>63</td>
+<td>Lando Norris</td>
+<td>1636.64</td>
+<td>1559.89</td>
+<td>1754.4</td>
+<td>1595.64</td>
+</tr>
+<tr>
+<td>64</td>
 <td>Ronnie Peterson</td>
 <td>1635.83</td>
 <td>1623.92</td>
@@ -556,7 +548,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1559.81</td>
 </tr>
 <tr>
-<td>66</td>
+<td>65</td>
 <td>Chris Bristow</td>
 <td>1633.52</td>
 <td>1619.0</td>
@@ -564,7 +556,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1638.39</td>
 </tr>
 <tr>
-<td>67</td>
+<td>66</td>
 <td>Clay Regazzoni</td>
 <td>1631.16</td>
 <td>1528.51</td>
@@ -572,7 +564,23 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1581.77</td>
 </tr>
 <tr>
+<td>67</td>
+<td>Daniel Ricciardo</td>
+<td>1630.88</td>
+<td>1463.72</td>
+<td>1866.51</td>
+<td>1562.41</td>
+</tr>
+<tr>
 <td>68</td>
+<td>George Russell</td>
+<td>1630.56</td>
+<td>1695.82</td>
+<td>1771.83</td>
+<td>1424.04</td>
+</tr>
+<tr>
+<td>69</td>
 <td>George Follmer</td>
 <td>1630.42</td>
 <td>1524.24</td>
@@ -580,7 +588,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1586.24</td>
 </tr>
 <tr>
-<td>69</td>
+<td>70</td>
 <td>Moisés Solana</td>
 <td>1628.78</td>
 <td>1613.61</td>
@@ -588,7 +596,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1631.82</td>
 </tr>
 <tr>
-<td>70</td>
+<td>71</td>
 <td>Didier Pironi</td>
 <td>1626.83</td>
 <td>1612.53</td>
@@ -596,7 +604,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1570.8</td>
 </tr>
 <tr>
-<td>71</td>
+<td>72</td>
 <td>Bob Bondurant</td>
 <td>1626.75</td>
 <td>1604.52</td>
@@ -604,7 +612,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1617.19</td>
 </tr>
 <tr>
-<td>72</td>
+<td>73</td>
 <td>Cliff Allison</td>
 <td>1626.37</td>
 <td>1547.04</td>
@@ -612,7 +620,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1575.43</td>
 </tr>
 <tr>
-<td>73</td>
+<td>74</td>
 <td>Wolfgang von Trips</td>
 <td>1624.78</td>
 <td>1663.32</td>
@@ -620,7 +628,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1497.71</td>
 </tr>
 <tr>
-<td>74</td>
+<td>75</td>
 <td>Niki Lauda</td>
 <td>1624.5</td>
 <td>1431.9</td>
@@ -628,7 +636,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1530.1</td>
 </tr>
 <tr>
-<td>75</td>
+<td>76</td>
 <td>John Surtees</td>
 <td>1621.42</td>
 <td>1515.84</td>
@@ -636,7 +644,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1566.62</td>
 </tr>
 <tr>
-<td>76</td>
+<td>77</td>
 <td>Jochen Rindt</td>
 <td>1620.6</td>
 <td>1610.04</td>
@@ -644,7 +652,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1545.12</td>
 </tr>
 <tr>
-<td>77</td>
+<td>78</td>
 <td>Alan Jones</td>
 <td>1620.24</td>
 <td>1391.31</td>
@@ -652,7 +660,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1605.37</td>
 </tr>
 <tr>
-<td>78</td>
+<td>79</td>
 <td>Jean Behra</td>
 <td>1619.74</td>
 <td>1480.06</td>
@@ -660,20 +668,12 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1563.56</td>
 </tr>
 <tr>
-<td>79</td>
+<td>80</td>
 <td>Bob Anderson</td>
 <td>1617.71</td>
 <td>1582.64</td>
 <td>1647.73</td>
 <td>1622.75</td>
-</tr>
-<tr>
-<td>80</td>
-<td>Sergio Pérez</td>
-<td>1616.39</td>
-<td>1551.13</td>
-<td>1747.84</td>
-<td>1550.21</td>
 </tr>
 <tr>
 <td>81</td>
@@ -829,6 +829,14 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>100</td>
+<td>Nyck de Vries</td>
+<td>1597.89</td>
+<td>1583.05</td>
+<td>1607.29</td>
+<td>1603.32</td>
+</tr>
+<tr>
+<td>101</td>
 <td>José Froilán González</td>
 <td>1597.51</td>
 <td>1609.46</td>
@@ -836,7 +844,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1549.97</td>
 </tr>
 <tr>
-<td>101</td>
+<td>102</td>
 <td>Roy Salvadori</td>
 <td>1594.74</td>
 <td>1428.32</td>
@@ -844,7 +852,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1625.12</td>
 </tr>
 <tr>
-<td>102</td>
+<td>103</td>
 <td>Hap Sharp</td>
 <td>1589.3</td>
 <td>1586.53</td>
@@ -852,7 +860,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1589.55</td>
 </tr>
 <tr>
-<td>103</td>
+<td>104</td>
 <td>Jacques Laffite</td>
 <td>1588.94</td>
 <td>1518.95</td>
@@ -860,7 +868,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1512.87</td>
 </tr>
 <tr>
-<td>104</td>
+<td>105</td>
 <td>Jenson Button</td>
 <td>1588.57</td>
 <td>1401.78</td>
@@ -868,7 +876,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1523.23</td>
 </tr>
 <tr>
-<td>105</td>
+<td>106</td>
 <td>Consalvo Sanesi</td>
 <td>1587.38</td>
 <td>1608.57</td>
@@ -876,7 +884,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1544.98</td>
 </tr>
 <tr>
-<td>106</td>
+<td>107</td>
 <td>Paco Godia</td>
 <td>1584.82</td>
 <td>1574.94</td>
@@ -884,7 +892,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1570.36</td>
 </tr>
 <tr>
-<td>107</td>
+<td>108</td>
 <td>Gilles Villeneuve</td>
 <td>1583.19</td>
 <td>1420.76</td>
@@ -892,7 +900,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1588.59</td>
 </tr>
 <tr>
-<td>108</td>
+<td>109</td>
 <td>Riccardo Patrese</td>
 <td>1579.54</td>
 <td>1515.28</td>
@@ -900,7 +908,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1473.68</td>
 </tr>
 <tr>
-<td>109</td>
+<td>110</td>
 <td>Gerhard Berger</td>
 <td>1578.79</td>
 <td>1567.74</td>
@@ -908,7 +916,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1500.39</td>
 </tr>
 <tr>
-<td>110</td>
+<td>111</td>
 <td>James Hunt</td>
 <td>1578.46</td>
 <td>1417.17</td>
@@ -916,7 +924,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1578.04</td>
 </tr>
 <tr>
-<td>111</td>
+<td>112</td>
 <td>Jo Bonnier</td>
 <td>1578.19</td>
 <td>1519.44</td>
@@ -924,7 +932,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1532.35</td>
 </tr>
 <tr>
-<td>112</td>
+<td>113</td>
 <td>Pedro Rodríguez</td>
 <td>1575.13</td>
 <td>1594.54</td>
@@ -932,7 +940,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1494.01</td>
 </tr>
 <tr>
-<td>113</td>
+<td>114</td>
 <td>Louis Chiron</td>
 <td>1574.37</td>
 <td>1531.94</td>
@@ -940,7 +948,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1542.14</td>
 </tr>
 <tr>
-<td>114</td>
+<td>115</td>
 <td>Luigi Villoresi</td>
 <td>1574.33</td>
 <td>1567.85</td>
@@ -948,7 +956,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1540.8</td>
 </tr>
 <tr>
-<td>115</td>
+<td>116</td>
 <td>Ricardo Zunino</td>
 <td>1570.26</td>
 <td>1481.06</td>
@@ -956,7 +964,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1525.25</td>
 </tr>
 <tr>
-<td>116</td>
+<td>117</td>
 <td>John Watson</td>
 <td>1569.41</td>
 <td>1482.0</td>
@@ -964,7 +972,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1530.66</td>
 </tr>
 <tr>
-<td>117</td>
+<td>118</td>
 <td>Jacky Ickx</td>
 <td>1569.14</td>
 <td>1433.91</td>
@@ -972,7 +980,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1516.22</td>
 </tr>
 <tr>
-<td>118</td>
+<td>119</td>
 <td>Chris Amon</td>
 <td>1568.95</td>
 <td>1487.4</td>
@@ -980,7 +988,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1535.36</td>
 </tr>
 <tr>
-<td>119</td>
+<td>120</td>
 <td>Mario Andretti</td>
 <td>1568.93</td>
 <td>1454.37</td>
@@ -988,20 +996,12 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1496.98</td>
 </tr>
 <tr>
-<td>120</td>
+<td>121</td>
 <td>Maurice Trintignant</td>
 <td>1567.95</td>
 <td>1512.26</td>
 <td>1677.85</td>
 <td>1513.75</td>
-</tr>
-<tr>
-<td>121</td>
-<td>Esteban Ocon</td>
-<td>1567.85</td>
-<td>1576.11</td>
-<td>1641.3</td>
-<td>1486.14</td>
 </tr>
 <tr>
 <td>122</td>
@@ -1053,11 +1053,11 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>128</td>
-<td>Pierre Gasly</td>
-<td>1561.47</td>
-<td>1542.15</td>
-<td>1626.01</td>
-<td>1516.25</td>
+<td>Esteban Ocon</td>
+<td>1565.22</td>
+<td>1550.3</td>
+<td>1641.3</td>
+<td>1504.06</td>
 </tr>
 <tr>
 <td>129</td>
@@ -1077,6 +1077,22 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 </tr>
 <tr>
 <td>131</td>
+<td>Alexander Albon</td>
+<td>1559.0</td>
+<td>1412.93</td>
+<td>1682.88</td>
+<td>1581.18</td>
+</tr>
+<tr>
+<td>132</td>
+<td>Kevin Magnussen</td>
+<td>1554.66</td>
+<td>1358.21</td>
+<td>1881.11</td>
+<td>1424.66</td>
+</tr>
+<tr>
+<td>133</td>
 <td>John Taylor</td>
 <td>1554.48</td>
 <td>1553.84</td>
@@ -1084,7 +1100,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1549.55</td>
 </tr>
 <tr>
-<td>132</td>
+<td>134</td>
 <td>Elio de Angelis</td>
 <td>1554.44</td>
 <td>1432.39</td>
@@ -1092,7 +1108,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1528.66</td>
 </tr>
 <tr>
-<td>133</td>
+<td>135</td>
 <td>Tony Brooks</td>
 <td>1553.85</td>
 <td>1590.42</td>
@@ -1100,7 +1116,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1480.72</td>
 </tr>
 <tr>
-<td>134</td>
+<td>136</td>
 <td>Ronnie Bucknum</td>
 <td>1553.57</td>
 <td>1549.14</td>
@@ -1108,7 +1124,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1546.45</td>
 </tr>
 <tr>
-<td>135</td>
+<td>137</td>
 <td>Damon Hill</td>
 <td>1553.48</td>
 <td>1377.54</td>
@@ -1116,7 +1132,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1503.31</td>
 </tr>
 <tr>
-<td>136</td>
+<td>138</td>
 <td>Carlos Pace</td>
 <td>1551.41</td>
 <td>1519.87</td>
@@ -1124,7 +1140,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1494.88</td>
 </tr>
 <tr>
-<td>137</td>
+<td>139</td>
 <td>Rubens Barrichello</td>
 <td>1551.2</td>
 <td>1404.28</td>
@@ -1132,7 +1148,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1487.17</td>
 </tr>
 <tr>
-<td>138</td>
+<td>140</td>
+<td>Nico Hülkenberg</td>
+<td>1548.92</td>
+<td>1498.87</td>
+<td>1653.93</td>
+<td>1493.96</td>
+</tr>
+<tr>
+<td>141</td>
 <td>Tom Pryce</td>
 <td>1548.35</td>
 <td>1498.12</td>
@@ -1140,7 +1164,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1479.42</td>
 </tr>
 <tr>
-<td>139</td>
+<td>142</td>
 <td>Jean Alesi</td>
 <td>1548.3</td>
 <td>1444.43</td>
@@ -1148,15 +1172,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1468.12</td>
 </tr>
 <tr>
-<td>140</td>
-<td>Nico Hülkenberg</td>
-<td>1545.91</td>
-<td>1489.42</td>
-<td>1653.93</td>
-<td>1494.4</td>
-</tr>
-<tr>
-<td>141</td>
+<td>143</td>
 <td>Rudi Fischer</td>
 <td>1545.1</td>
 <td>1546.62</td>
@@ -1164,7 +1180,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1533.32</td>
 </tr>
 <tr>
-<td>142</td>
+<td>144</td>
 <td>Guy Ligier</td>
 <td>1543.65</td>
 <td>1542.79</td>
@@ -1172,7 +1188,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1534.34</td>
 </tr>
 <tr>
-<td>143</td>
+<td>145</td>
 <td>Harald Ertl</td>
 <td>1542.86</td>
 <td>1457.82</td>
@@ -1180,7 +1196,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1474.89</td>
 </tr>
 <tr>
-<td>144</td>
+<td>146</td>
+<td>Pierre Gasly</td>
+<td>1542.14</td>
+<td>1488.49</td>
+<td>1626.01</td>
+<td>1511.9</td>
+</tr>
+<tr>
+<td>147</td>
 <td>Jochen Mass</td>
 <td>1541.59</td>
 <td>1465.72</td>
@@ -1188,7 +1212,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1502.3</td>
 </tr>
 <tr>
-<td>145</td>
+<td>148</td>
 <td>David Coulthard</td>
 <td>1540.63</td>
 <td>1365.16</td>
@@ -1196,7 +1220,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1497.41</td>
 </tr>
 <tr>
-<td>146</td>
+<td>149</td>
 <td>Cesare Perdisa</td>
 <td>1540.03</td>
 <td>1546.96</td>
@@ -1204,15 +1228,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1519.51</td>
 </tr>
 <tr>
-<td>147</td>
-<td>Kevin Magnussen</td>
-<td>1538.38</td>
-<td>1295.4</td>
-<td>1881.11</td>
-<td>1438.61</td>
-</tr>
-<tr>
-<td>148</td>
+<td>150</td>
 <td>Ingo Hoffmann</td>
 <td>1538.19</td>
 <td>1529.59</td>
@@ -1220,7 +1236,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1531.31</td>
 </tr>
 <tr>
-<td>149</td>
+<td>151</td>
 <td>Daniil Kvyat</td>
 <td>1537.1</td>
 <td>1532.17</td>
@@ -1228,7 +1244,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1458.61</td>
 </tr>
 <tr>
-<td>150</td>
+<td>152</td>
 <td>Juan Pablo Montoya</td>
 <td>1536.92</td>
 <td>1429.11</td>
@@ -1236,7 +1252,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1503.05</td>
 </tr>
 <tr>
-<td>151</td>
+<td>153</td>
 <td>Jean-Pierre Beltoise</td>
 <td>1535.67</td>
 <td>1417.92</td>
@@ -1244,7 +1260,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1544.27</td>
 </tr>
 <tr>
-<td>152</td>
+<td>154</td>
 <td>Felipe Nasr</td>
 <td>1534.6</td>
 <td>1366.41</td>
@@ -1252,7 +1268,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1448.92</td>
 </tr>
 <tr>
-<td>153</td>
+<td>155</td>
 <td>Jacques Villeneuve</td>
 <td>1528.26</td>
 <td>1369.1</td>
@@ -1260,7 +1276,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1444.91</td>
 </tr>
 <tr>
-<td>154</td>
+<td>156</td>
 <td>Toulo de Graffenried</td>
 <td>1526.35</td>
 <td>1522.31</td>
@@ -1268,7 +1284,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1505.41</td>
 </tr>
 <tr>
-<td>155</td>
+<td>157</td>
 <td>Eddie Irvine</td>
 <td>1525.9</td>
 <td>1380.62</td>
@@ -1276,7 +1292,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1454.02</td>
 </tr>
 <tr>
-<td>156</td>
+<td>158</td>
 <td>Ian Burgess</td>
 <td>1524.83</td>
 <td>1470.23</td>
@@ -1284,7 +1300,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1534.92</td>
 </tr>
 <tr>
-<td>157</td>
+<td>159</td>
 <td>Keke Rosberg</td>
 <td>1523.88</td>
 <td>1424.42</td>
@@ -1292,7 +1308,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1472.26</td>
 </tr>
 <tr>
-<td>158</td>
+<td>160</td>
 <td>Brett Lunger</td>
 <td>1523.88</td>
 <td>1463.11</td>
@@ -1300,7 +1316,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1501.69</td>
 </tr>
 <tr>
-<td>159</td>
+<td>161</td>
 <td>Gunnar Nilsson</td>
 <td>1523.41</td>
 <td>1427.05</td>
@@ -1308,7 +1324,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1499.04</td>
 </tr>
 <tr>
-<td>160</td>
+<td>162</td>
 <td>Martin Brundle</td>
 <td>1523.23</td>
 <td>1474.46</td>
@@ -1316,7 +1332,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1417.74</td>
 </tr>
 <tr>
-<td>161</td>
+<td>163</td>
 <td>Peter Collins</td>
 <td>1522.69</td>
 <td>1549.97</td>
@@ -1324,7 +1340,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1438.8</td>
 </tr>
 <tr>
-<td>162</td>
+<td>164</td>
 <td>Roberto Mieres</td>
 <td>1522.46</td>
 <td>1561.45</td>
@@ -1332,7 +1348,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1444.48</td>
 </tr>
 <tr>
-<td>163</td>
+<td>165</td>
 <td>Alessandro Nannini</td>
 <td>1521.69</td>
 <td>1585.07</td>
@@ -1340,7 +1356,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.92</td>
 </tr>
 <tr>
-<td>164</td>
+<td>166</td>
+<td>Lance Stroll</td>
+<td>1521.23</td>
+<td>1514.02</td>
+<td>1598.77</td>
+<td>1450.89</td>
+</tr>
+<tr>
+<td>167</td>
 <td>Horace Gould</td>
 <td>1520.89</td>
 <td>1473.07</td>
@@ -1348,7 +1372,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1515.86</td>
 </tr>
 <tr>
-<td>165</td>
+<td>168</td>
 <td>Nick Heidfeld</td>
 <td>1519.98</td>
 <td>1429.63</td>
@@ -1356,7 +1380,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1453.09</td>
 </tr>
 <tr>
-<td>166</td>
+<td>169</td>
 <td>Johnny Claes</td>
 <td>1519.11</td>
 <td>1457.33</td>
@@ -1364,7 +1388,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1475.29</td>
 </tr>
 <tr>
-<td>167</td>
+<td>170</td>
 <td>Renzo Zorzi</td>
 <td>1517.38</td>
 <td>1491.92</td>
@@ -1372,7 +1396,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1525.9</td>
 </tr>
 <tr>
-<td>168</td>
+<td>171</td>
 <td>Vittorio Brambilla</td>
 <td>1517.3</td>
 <td>1458.18</td>
@@ -1380,7 +1404,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1492.74</td>
 </tr>
 <tr>
-<td>169</td>
+<td>172</td>
 <td>Alfonso de Portago</td>
 <td>1515.34</td>
 <td>1507.29</td>
@@ -1388,7 +1412,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1481.42</td>
 </tr>
 <tr>
-<td>170</td>
+<td>173</td>
 <td>Howden Ganley</td>
 <td>1515.24</td>
 <td>1506.87</td>
@@ -1396,7 +1420,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1488.47</td>
 </tr>
 <tr>
-<td>171</td>
+<td>174</td>
 <td>Stoffel Vandoorne</td>
 <td>1513.07</td>
 <td>1418.1</td>
@@ -1404,7 +1428,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1515.05</td>
 </tr>
 <tr>
-<td>172</td>
+<td>175</td>
 <td>Alex Ribeiro</td>
 <td>1512.69</td>
 <td>1477.53</td>
@@ -1412,7 +1436,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1485.24</td>
 </tr>
 <tr>
-<td>173</td>
+<td>176</td>
 <td>René Arnoux</td>
 <td>1512.52</td>
 <td>1355.46</td>
@@ -1420,7 +1444,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1490.87</td>
 </tr>
 <tr>
-<td>174</td>
+<td>177</td>
 <td>Wilson Fittipaldi</td>
 <td>1511.59</td>
 <td>1398.54</td>
@@ -1428,7 +1452,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1448.85</td>
 </tr>
 <tr>
-<td>175</td>
+<td>178</td>
 <td>Alessandro Pesenti-Rossi</td>
 <td>1511.53</td>
 <td>1468.18</td>
@@ -1436,7 +1460,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1510.74</td>
 </tr>
 <tr>
-<td>176</td>
+<td>179</td>
 <td>Lance Macklin</td>
 <td>1511.36</td>
 <td>1501.59</td>
@@ -1444,7 +1468,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1500.84</td>
 </tr>
 <tr>
-<td>177</td>
+<td>180</td>
 <td>Helmut Marko</td>
 <td>1511.02</td>
 <td>1499.53</td>
@@ -1452,7 +1476,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1502.66</td>
 </tr>
 <tr>
-<td>178</td>
+<td>181</td>
 <td>Hans-Joachim Stuck</td>
 <td>1510.18</td>
 <td>1460.61</td>
@@ -1460,7 +1484,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1462.17</td>
 </tr>
 <tr>
-<td>179</td>
+<td>182</td>
 <td>Johnny Herbert</td>
 <td>1510.11</td>
 <td>1360.21</td>
@@ -1468,7 +1492,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1443.18</td>
 </tr>
 <tr>
-<td>180</td>
+<td>183</td>
 <td>Jacques Swaters</td>
 <td>1509.31</td>
 <td>1474.57</td>
@@ -1476,7 +1500,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1476.47</td>
 </tr>
 <tr>
-<td>181</td>
+<td>184</td>
 <td>Kenneth McAlpine</td>
 <td>1508.24</td>
 <td>1500.77</td>
@@ -1484,7 +1508,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1506.5</td>
 </tr>
 <tr>
-<td>182</td>
+<td>185</td>
 <td>Chico Serra</td>
 <td>1507.57</td>
 <td>1428.23</td>
@@ -1492,7 +1516,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1384.84</td>
 </tr>
 <tr>
-<td>183</td>
+<td>186</td>
 <td>Robert Kubica</td>
 <td>1504.44</td>
 <td>1268.47</td>
@@ -1500,7 +1524,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1532.28</td>
 </tr>
 <tr>
-<td>184</td>
+<td>187</td>
 <td>Marc Surer</td>
 <td>1503.34</td>
 <td>1472.46</td>
@@ -1508,7 +1532,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1467.06</td>
 </tr>
 <tr>
-<td>185</td>
+<td>188</td>
 <td>Giancarlo Fisichella</td>
 <td>1502.42</td>
 <td>1414.25</td>
@@ -1516,7 +1540,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1427.41</td>
 </tr>
 <tr>
-<td>186</td>
+<td>189</td>
 <td>Thierry Boutsen</td>
 <td>1502.36</td>
 <td>1397.19</td>
@@ -1524,15 +1548,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1477.15</td>
 </tr>
 <tr>
-<td>187</td>
-<td>Lance Stroll</td>
-<td>1502.27</td>
-<td>1462.42</td>
-<td>1598.77</td>
-<td>1445.62</td>
-</tr>
-<tr>
-<td>188</td>
+<td>190</td>
 <td>Wolfgang Seidel</td>
 <td>1501.4</td>
 <td>1462.5</td>
@@ -1540,7 +1556,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1515.17</td>
 </tr>
 <tr>
-<td>189</td>
+<td>191</td>
 <td>Brian Naylor</td>
 <td>1500.37</td>
 <td>1485.96</td>
@@ -1548,7 +1564,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1503.02</td>
 </tr>
 <tr>
-<td>190</td>
+<td>192</td>
 <td>Rolf Stommelen</td>
 <td>1498.2</td>
 <td>1451.62</td>
@@ -1556,7 +1572,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1481.61</td>
 </tr>
 <tr>
-<td>191</td>
+<td>193</td>
 <td>Piers Courage</td>
 <td>1496.76</td>
 <td>1452.99</td>
@@ -1564,7 +1580,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1489.18</td>
 </tr>
 <tr>
-<td>192</td>
+<td>194</td>
 <td>Jean-Pierre Jarier</td>
 <td>1495.79</td>
 <td>1430.78</td>
@@ -1572,7 +1588,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1456.09</td>
 </tr>
 <tr>
-<td>193</td>
+<td>195</td>
 <td>Peter Arundell</td>
 <td>1494.66</td>
 <td>1528.14</td>
@@ -1580,7 +1596,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1427.71</td>
 </tr>
 <tr>
-<td>194</td>
+<td>196</td>
 <td>Hernando da Silva Ramos</td>
 <td>1494.04</td>
 <td>1438.03</td>
@@ -1588,7 +1604,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1458.75</td>
 </tr>
 <tr>
-<td>195</td>
+<td>197</td>
 <td>Arturo Merzario</td>
 <td>1492.73</td>
 <td>1336.28</td>
@@ -1596,7 +1612,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1426.52</td>
 </tr>
 <tr>
-<td>196</td>
+<td>198</td>
 <td>Johnny Servoz-Gavin</td>
 <td>1491.85</td>
 <td>1489.92</td>
@@ -1604,7 +1620,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1485.95</td>
 </tr>
 <tr>
-<td>197</td>
+<td>199</td>
 <td>Ralf Schumacher</td>
 <td>1490.72</td>
 <td>1329.4</td>
@@ -1612,15 +1628,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1472.82</td>
 </tr>
 <tr>
-<td>198</td>
-<td>Yuki Tsunoda</td>
-<td>1488.99</td>
-<td>1445.2</td>
-<td>1603.45</td>
-<td>1418.31</td>
-</tr>
-<tr>
-<td>199</td>
+<td>200</td>
 <td>Pierre Levegh</td>
 <td>1488.53</td>
 <td>1434.29</td>
@@ -1628,7 +1636,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1451.3</td>
 </tr>
 <tr>
-<td>200</td>
+<td>201</td>
 <td>Jean-Éric Vergne</td>
 <td>1487.82</td>
 <td>1472.22</td>
@@ -1636,7 +1644,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1399.8</td>
 </tr>
 <tr>
-<td>201</td>
+<td>202</td>
 <td>Derek Daly</td>
 <td>1485.53</td>
 <td>1493.96</td>
@@ -1644,7 +1652,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1425.23</td>
 </tr>
 <tr>
-<td>202</td>
+<td>203</td>
 <td>Michele Alboreto</td>
 <td>1484.5</td>
 <td>1332.0</td>
@@ -1652,7 +1660,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1440.04</td>
 </tr>
 <tr>
-<td>203</td>
+<td>204</td>
 <td>Paul di Resta</td>
 <td>1483.74</td>
 <td>1423.26</td>
@@ -1660,7 +1668,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1456.57</td>
 </tr>
 <tr>
-<td>204</td>
+<td>205</td>
 <td>Danny Sullivan</td>
 <td>1483.01</td>
 <td>1396.15</td>
@@ -1668,7 +1676,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1451.05</td>
 </tr>
 <tr>
-<td>205</td>
+<td>206</td>
 <td>Patrick Tambay</td>
 <td>1482.91</td>
 <td>1360.33</td>
@@ -1676,7 +1684,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1469.58</td>
 </tr>
 <tr>
-<td>206</td>
+<td>207</td>
 <td>Mário de Araújo Cabral</td>
 <td>1481.18</td>
 <td>1474.68</td>
@@ -1684,7 +1692,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1482.97</td>
 </tr>
 <tr>
-<td>207</td>
+<td>208</td>
 <td>Danny Ongais</td>
 <td>1481.09</td>
 <td>1480.26</td>
@@ -1692,7 +1700,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1458.29</td>
 </tr>
 <tr>
-<td>208</td>
+<td>209</td>
 <td>Heinz-Harald Frentzen</td>
 <td>1478.81</td>
 <td>1311.91</td>
@@ -1700,7 +1708,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1449.37</td>
 </tr>
 <tr>
-<td>209</td>
+<td>210</td>
 <td>Guy Edwards</td>
 <td>1478.11</td>
 <td>1427.96</td>
@@ -1708,7 +1716,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1434.44</td>
 </tr>
 <tr>
-<td>210</td>
+<td>211</td>
 <td>Henri Pescarolo</td>
 <td>1478.05</td>
 <td>1417.49</td>
@@ -1716,7 +1724,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1454.78</td>
 </tr>
 <tr>
-<td>211</td>
+<td>212</td>
 <td>Bruno Giacomelli</td>
 <td>1477.34</td>
 <td>1440.66</td>
@@ -1724,7 +1732,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1425.4</td>
 </tr>
 <tr>
-<td>212</td>
+<td>213</td>
 <td>Trevor Taylor</td>
 <td>1476.01</td>
 <td>1491.01</td>
@@ -1732,7 +1740,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1424.32</td>
 </tr>
 <tr>
-<td>213</td>
+<td>214</td>
 <td>Satoru Nakajima</td>
 <td>1475.41</td>
 <td>1334.82</td>
@@ -1740,7 +1748,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1415.34</td>
 </tr>
 <tr>
-<td>214</td>
+<td>215</td>
 <td>Emanuele Pirro</td>
 <td>1475.33</td>
 <td>1424.98</td>
@@ -1748,7 +1756,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1402.28</td>
 </tr>
 <tr>
-<td>215</td>
+<td>216</td>
+<td>Yuki Tsunoda</td>
+<td>1473.01</td>
+<td>1413.92</td>
+<td>1603.45</td>
+<td>1401.66</td>
+</tr>
+<tr>
+<td>217</td>
 <td>Martin Donnelly</td>
 <td>1472.69</td>
 <td>1391.26</td>
@@ -1756,7 +1772,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1495.12</td>
 </tr>
 <tr>
-<td>216</td>
+<td>218</td>
 <td>Jacques Pollet</td>
 <td>1471.19</td>
 <td>1471.36</td>
@@ -1764,7 +1780,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1468.47</td>
 </tr>
 <tr>
-<td>217</td>
+<td>219</td>
 <td>Heikki Kovalainen</td>
 <td>1470.36</td>
 <td>1332.44</td>
@@ -1772,7 +1788,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1408.67</td>
 </tr>
 <tr>
-<td>218</td>
+<td>220</td>
 <td>Slim Borgudd</td>
 <td>1470.21</td>
 <td>1463.16</td>
@@ -1780,7 +1796,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1411.82</td>
 </tr>
 <tr>
-<td>219</td>
+<td>221</td>
 <td>Gino Munaron</td>
 <td>1469.37</td>
 <td>1464.67</td>
@@ -1788,7 +1804,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1470.48</td>
 </tr>
 <tr>
-<td>220</td>
+<td>222</td>
 <td>Rikky von Opel</td>
 <td>1468.32</td>
 <td>1432.11</td>
@@ -1796,7 +1812,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1447.15</td>
 </tr>
 <tr>
-<td>221</td>
+<td>223</td>
+<td>Guanyu Zhou</td>
+<td>1466.67</td>
+<td>1426.1</td>
+<td>1570.98</td>
+<td>1402.94</td>
+</tr>
+<tr>
+<td>224</td>
 <td>Johnny Dumfries</td>
 <td>1466.53</td>
 <td>1420.42</td>
@@ -1804,7 +1828,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1399.53</td>
 </tr>
 <tr>
-<td>222</td>
+<td>225</td>
 <td>Jean-Christophe Boullion</td>
 <td>1465.85</td>
 <td>1382.38</td>
@@ -1812,7 +1836,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1434.06</td>
 </tr>
 <tr>
-<td>223</td>
+<td>226</td>
 <td>Ian Scheckter</td>
 <td>1465.4</td>
 <td>1390.78</td>
@@ -1820,7 +1844,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1489.89</td>
 </tr>
 <tr>
-<td>224</td>
+<td>227</td>
 <td>Stefan Johansson</td>
 <td>1464.81</td>
 <td>1338.65</td>
@@ -1828,7 +1852,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1406.03</td>
 </tr>
 <tr>
-<td>225</td>
+<td>228</td>
 <td>Johnny Cecotto</td>
 <td>1463.16</td>
 <td>1362.33</td>
@@ -1836,7 +1860,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1421.06</td>
 </tr>
 <tr>
-<td>226</td>
+<td>229</td>
 <td>Tony Marsh</td>
 <td>1462.91</td>
 <td>1455.72</td>
@@ -1844,7 +1868,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1465.45</td>
 </tr>
 <tr>
-<td>227</td>
+<td>230</td>
 <td>Derek Warwick</td>
 <td>1461.79</td>
 <td>1404.33</td>
@@ -1852,7 +1876,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.92</td>
 </tr>
 <tr>
-<td>228</td>
+<td>231</td>
 <td>Loris Kessel</td>
 <td>1461.74</td>
 <td>1454.93</td>
@@ -1860,7 +1884,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1451.16</td>
 </tr>
 <tr>
-<td>229</td>
+<td>232</td>
 <td>Carroll Shelby</td>
 <td>1460.02</td>
 <td>1461.17</td>
@@ -1868,7 +1892,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1452.06</td>
 </tr>
 <tr>
-<td>230</td>
+<td>233</td>
 <td>Christian Fittipaldi</td>
 <td>1459.56</td>
 <td>1457.26</td>
@@ -1876,7 +1900,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1419.76</td>
 </tr>
 <tr>
-<td>231</td>
+<td>234</td>
 <td>Sébastien Buemi</td>
 <td>1459.41</td>
 <td>1343.9</td>
@@ -1884,7 +1908,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1387.99</td>
 </tr>
 <tr>
-<td>232</td>
+<td>235</td>
 <td>Richard Attwood</td>
 <td>1458.42</td>
 <td>1470.22</td>
@@ -1892,7 +1916,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1429.92</td>
 </tr>
 <tr>
-<td>233</td>
+<td>236</td>
 <td>Kazuki Nakajima</td>
 <td>1458.13</td>
 <td>1367.55</td>
@@ -1900,7 +1924,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1405.34</td>
 </tr>
 <tr>
-<td>234</td>
+<td>237</td>
 <td>Bob Evans</td>
 <td>1457.35</td>
 <td>1431.5</td>
@@ -1908,7 +1932,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1442.49</td>
 </tr>
 <tr>
-<td>235</td>
+<td>238</td>
 <td>Hector Rebaque</td>
 <td>1457.05</td>
 <td>1455.1</td>
@@ -1916,7 +1940,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1378.29</td>
 </tr>
 <tr>
-<td>236</td>
+<td>239</td>
 <td>Jonathan Palmer</td>
 <td>1456.71</td>
 <td>1408.77</td>
@@ -1924,7 +1948,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1429.45</td>
 </tr>
 <tr>
-<td>237</td>
+<td>240</td>
 <td>Brian Henton</td>
 <td>1454.88</td>
 <td>1465.16</td>
@@ -1932,7 +1956,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1424.55</td>
 </tr>
 <tr>
-<td>238</td>
+<td>241</td>
 <td>Ian Ashley</td>
 <td>1453.06</td>
 <td>1404.6</td>
@@ -1940,7 +1964,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1425.27</td>
 </tr>
 <tr>
-<td>239</td>
+<td>242</td>
 <td>John Miles</td>
 <td>1452.81</td>
 <td>1436.63</td>
@@ -1948,7 +1972,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1438.1</td>
 </tr>
 <tr>
-<td>240</td>
+<td>243</td>
 <td>Kamui Kobayashi</td>
 <td>1452.11</td>
 <td>1332.46</td>
@@ -1956,7 +1980,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1441.33</td>
 </tr>
 <tr>
-<td>241</td>
+<td>244</td>
 <td>Sébastien Bourdais</td>
 <td>1451.7</td>
 <td>1335.64</td>
@@ -1964,7 +1988,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1368.08</td>
 </tr>
 <tr>
-<td>242</td>
+<td>245</td>
 <td>Rupert Keegan</td>
 <td>1450.82</td>
 <td>1409.85</td>
@@ -1972,7 +1996,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1420.34</td>
 </tr>
 <tr>
-<td>243</td>
+<td>246</td>
 <td>Eddie Cheever</td>
 <td>1449.17</td>
 <td>1395.0</td>
@@ -1980,7 +2004,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1393.83</td>
 </tr>
 <tr>
-<td>244</td>
+<td>247</td>
 <td>Timo Glock</td>
 <td>1448.08</td>
 <td>1276.01</td>
@@ -1988,7 +2012,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1449.48</td>
 </tr>
 <tr>
-<td>245</td>
+<td>248</td>
 <td>Robert Manzon</td>
 <td>1447.93</td>
 <td>1453.34</td>
@@ -1996,7 +2020,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1425.42</td>
 </tr>
 <tr>
-<td>246</td>
+<td>249</td>
 <td>Emanuele Naspetti</td>
 <td>1447.29</td>
 <td>1400.7</td>
@@ -2004,7 +2028,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1415.49</td>
 </tr>
 <tr>
-<td>247</td>
+<td>250</td>
 <td>Jolyon Palmer</td>
 <td>1445.08</td>
 <td>1404.44</td>
@@ -2012,7 +2036,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1365.93</td>
 </tr>
 <tr>
-<td>248</td>
+<td>251</td>
 <td>Romain Grosjean</td>
 <td>1445.01</td>
 <td>1311.59</td>
@@ -2020,7 +2044,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1388.58</td>
 </tr>
 <tr>
-<td>249</td>
+<td>252</td>
 <td>Eric van de Poele</td>
 <td>1443.87</td>
 <td>1315.07</td>
@@ -2028,7 +2052,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1423.92</td>
 </tr>
 <tr>
-<td>250</td>
+<td>253</td>
 <td>Mark Blundell</td>
 <td>1443.53</td>
 <td>1477.88</td>
@@ -2036,7 +2060,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1374.83</td>
 </tr>
 <tr>
-<td>251</td>
+<td>254</td>
 <td>Nasif Estéfano</td>
 <td>1443.12</td>
 <td>1438.45</td>
@@ -2044,7 +2068,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1444.96</td>
 </tr>
 <tr>
-<td>252</td>
+<td>255</td>
 <td>Érik Comas</td>
 <td>1442.16</td>
 <td>1377.13</td>
@@ -2052,7 +2076,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1403.45</td>
 </tr>
 <tr>
-<td>253</td>
+<td>256</td>
 <td>Pascal Fabre</td>
 <td>1442.15</td>
 <td>1378.77</td>
@@ -2060,7 +2084,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1446.25</td>
 </tr>
 <tr>
-<td>254</td>
+<td>257</td>
 <td>Nicola Larini</td>
 <td>1441.12</td>
 <td>1402.78</td>
@@ -2068,7 +2092,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1366.35</td>
 </tr>
 <tr>
-<td>255</td>
+<td>258</td>
 <td>Shinji Nakano</td>
 <td>1440.55</td>
 <td>1329.6</td>
@@ -2076,7 +2100,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1370.0</td>
 </tr>
 <tr>
-<td>256</td>
+<td>259</td>
 <td>Éric Bernard</td>
 <td>1440.02</td>
 <td>1430.55</td>
@@ -2084,7 +2108,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1338.59</td>
 </tr>
 <tr>
-<td>257</td>
+<td>260</td>
 <td>Derek Bell</td>
 <td>1438.49</td>
 <td>1419.36</td>
@@ -2092,7 +2116,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1444.5</td>
 </tr>
 <tr>
-<td>258</td>
+<td>261</td>
 <td>Tony Gaze</td>
 <td>1437.51</td>
 <td>1428.36</td>
@@ -2100,7 +2124,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1437.42</td>
 </tr>
 <tr>
-<td>259</td>
+<td>262</td>
 <td>Mika Salo</td>
 <td>1435.7</td>
 <td>1383.45</td>
@@ -2108,7 +2132,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.5</td>
 </tr>
 <tr>
-<td>260</td>
+<td>263</td>
 <td>Philippe Alliot</td>
 <td>1435.23</td>
 <td>1460.44</td>
@@ -2116,7 +2140,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1367.0</td>
 </tr>
 <tr>
-<td>261</td>
+<td>264</td>
 <td>Alexander Wurz</td>
 <td>1434.88</td>
 <td>1380.08</td>
@@ -2124,7 +2148,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1424.38</td>
 </tr>
 <tr>
-<td>262</td>
+<td>265</td>
 <td>Ricardo Rodríguez</td>
 <td>1432.8</td>
 <td>1442.11</td>
@@ -2132,7 +2156,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1414.18</td>
 </tr>
 <tr>
-<td>263</td>
+<td>266</td>
 <td>Alessandro Zanardi</td>
 <td>1432.74</td>
 <td>1333.24</td>
@@ -2140,7 +2164,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1366.14</td>
 </tr>
 <tr>
-<td>264</td>
+<td>267</td>
 <td>Peter Gethin</td>
 <td>1431.9</td>
 <td>1385.98</td>
@@ -2148,7 +2172,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1397.87</td>
 </tr>
 <tr>
-<td>265</td>
+<td>268</td>
 <td>Michael Andretti</td>
 <td>1430.77</td>
 <td>1449.72</td>
@@ -2156,7 +2180,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1378.94</td>
 </tr>
 <tr>
-<td>266</td>
+<td>269</td>
 <td>Jaime Alguersuari</td>
 <td>1430.41</td>
 <td>1451.35</td>
@@ -2164,7 +2188,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1373.91</td>
 </tr>
 <tr>
-<td>267</td>
+<td>270</td>
 <td>Olivier Panis</td>
 <td>1429.84</td>
 <td>1316.58</td>
@@ -2172,7 +2196,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1416.27</td>
 </tr>
 <tr>
-<td>268</td>
+<td>271</td>
 <td>Mike Beuttler</td>
 <td>1429.69</td>
 <td>1446.04</td>
@@ -2180,7 +2204,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1379.4</td>
 </tr>
 <tr>
-<td>269</td>
+<td>272</td>
 <td>Michel Leclère</td>
 <td>1429.69</td>
 <td>1443.58</td>
@@ -2188,7 +2212,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1401.9</td>
 </tr>
 <tr>
-<td>270</td>
+<td>273</td>
 <td>Karl Wendlinger</td>
 <td>1427.59</td>
 <td>1411.48</td>
@@ -2196,7 +2220,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1401.06</td>
 </tr>
 <tr>
-<td>271</td>
+<td>274</td>
 <td>Patrick Nève</td>
 <td>1427.35</td>
 <td>1436.79</td>
@@ -2204,7 +2228,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1382.29</td>
 </tr>
 <tr>
-<td>272</td>
+<td>275</td>
 <td>Mauro Baldi</td>
 <td>1425.85</td>
 <td>1379.93</td>
@@ -2212,7 +2236,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1412.89</td>
 </tr>
 <tr>
-<td>273</td>
+<td>276</td>
 <td>Silvio Moser</td>
 <td>1425.52</td>
 <td>1418.08</td>
@@ -2220,7 +2244,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1422.51</td>
 </tr>
 <tr>
-<td>274</td>
+<td>277</td>
 <td>Andrea de Adamich</td>
 <td>1425.5</td>
 <td>1423.96</td>
@@ -2228,7 +2252,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1402.69</td>
 </tr>
 <tr>
-<td>275</td>
+<td>278</td>
 <td>Tim Schenken</td>
 <td>1425.22</td>
 <td>1419.39</td>
@@ -2236,7 +2260,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1404.43</td>
 </tr>
 <tr>
-<td>276</td>
+<td>279</td>
 <td>Teo Fabi</td>
 <td>1424.22</td>
 <td>1419.92</td>
@@ -2244,7 +2268,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1345.52</td>
 </tr>
 <tr>
-<td>277</td>
+<td>280</td>
 <td>Jan Magnussen</td>
 <td>1424.1</td>
 <td>1347.94</td>
@@ -2252,7 +2276,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1429.8</td>
 </tr>
 <tr>
-<td>278</td>
+<td>281</td>
 <td>Jyrki Järvilehto</td>
 <td>1422.21</td>
 <td>1409.17</td>
@@ -2260,7 +2284,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1361.0</td>
 </tr>
 <tr>
-<td>279</td>
+<td>282</td>
 <td>Maria de Filippis</td>
 <td>1422.19</td>
 <td>1421.02</td>
@@ -2268,7 +2292,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1421.91</td>
 </tr>
 <tr>
-<td>280</td>
+<td>283</td>
 <td>Giulio Cabianca</td>
 <td>1421.63</td>
 <td>1422.74</td>
@@ -2276,7 +2300,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1419.42</td>
 </tr>
 <tr>
-<td>281</td>
+<td>284</td>
 <td>Gerry Ashmore</td>
 <td>1421.6</td>
 <td>1422.6</td>
@@ -2284,7 +2308,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1415.64</td>
 </tr>
 <tr>
-<td>282</td>
+<td>285</td>
 <td>Raul Boesel</td>
 <td>1421.13</td>
 <td>1367.38</td>
@@ -2292,7 +2316,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1406.58</td>
 </tr>
 <tr>
-<td>283</td>
+<td>286</td>
 <td>Gianni Morbidelli</td>
 <td>1420.79</td>
 <td>1413.09</td>
@@ -2300,7 +2324,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1395.99</td>
 </tr>
 <tr>
-<td>284</td>
+<td>287</td>
 <td>Alex Caffi</td>
 <td>1420.54</td>
 <td>1406.61</td>
@@ -2308,7 +2332,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1355.42</td>
 </tr>
 <tr>
-<td>285</td>
+<td>288</td>
 <td>Alex Soler-Roig</td>
 <td>1418.72</td>
 <td>1401.89</td>
@@ -2316,7 +2340,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1420.05</td>
 </tr>
 <tr>
-<td>286</td>
+<td>289</td>
 <td>Siegfried Stohr</td>
 <td>1418.0</td>
 <td>1412.93</td>
@@ -2324,7 +2348,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1385.15</td>
 </tr>
 <tr>
-<td>287</td>
+<td>290</td>
 <td>Jarno Trulli</td>
 <td>1417.57</td>
 <td>1233.87</td>
@@ -2332,7 +2356,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1408.25</td>
 </tr>
 <tr>
-<td>288</td>
+<td>291</td>
 <td>Pierluigi Martini</td>
 <td>1417.48</td>
 <td>1371.2</td>
@@ -2340,7 +2364,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1378.73</td>
 </tr>
 <tr>
-<td>289</td>
+<td>292</td>
 <td>Onofre Marimón</td>
 <td>1416.96</td>
 <td>1441.06</td>
@@ -2348,7 +2372,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1365.36</td>
 </tr>
 <tr>
-<td>290</td>
+<td>293</td>
 <td>Pastor Maldonado</td>
 <td>1416.46</td>
 <td>1429.03</td>
@@ -2356,7 +2380,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1348.8</td>
 </tr>
 <tr>
-<td>291</td>
+<td>294</td>
 <td>Philippe Streiff</td>
 <td>1416.45</td>
 <td>1395.47</td>
@@ -2364,7 +2388,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1361.15</td>
 </tr>
 <tr>
-<td>292</td>
+<td>295</td>
 <td>Hans Binder</td>
 <td>1415.09</td>
 <td>1418.1</td>
@@ -2372,7 +2396,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1395.67</td>
 </tr>
 <tr>
-<td>293</td>
+<td>296</td>
 <td>Pedro Lamy</td>
 <td>1414.75</td>
 <td>1338.07</td>
@@ -2380,7 +2404,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.63</td>
 </tr>
 <tr>
-<td>294</td>
+<td>297</td>
 <td>Yannick Dalmas</td>
 <td>1414.75</td>
 <td>1321.48</td>
@@ -2388,7 +2412,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1351.27</td>
 </tr>
 <tr>
-<td>295</td>
+<td>298</td>
 <td>Pete Lovely</td>
 <td>1414.08</td>
 <td>1403.01</td>
@@ -2396,7 +2420,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1414.91</td>
 </tr>
 <tr>
-<td>296</td>
+<td>299</td>
 <td>Antonio Giovinazzi</td>
 <td>1413.24</td>
 <td>1391.69</td>
@@ -2404,7 +2428,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1366.92</td>
 </tr>
 <tr>
-<td>297</td>
+<td>300</td>
 <td>Nino Vaccarella</td>
 <td>1413.05</td>
 <td>1415.2</td>
@@ -2412,7 +2436,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1408.76</td>
 </tr>
 <tr>
-<td>298</td>
+<td>301</td>
 <td>Olivier Grouillard</td>
 <td>1412.93</td>
 <td>1298.03</td>
@@ -2420,7 +2444,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1346.23</td>
 </tr>
 <tr>
-<td>299</td>
+<td>302</td>
 <td>Norberto Fontana</td>
 <td>1412.79</td>
 <td>1421.04</td>
@@ -2428,7 +2452,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.66</td>
 </tr>
 <tr>
-<td>300</td>
+<td>303</td>
 <td>Lucien Bianchi</td>
 <td>1412.78</td>
 <td>1413.28</td>
@@ -2436,7 +2460,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1405.03</td>
 </tr>
 <tr>
-<td>301</td>
+<td>304</td>
 <td>Vitaly Petrov</td>
 <td>1411.9</td>
 <td>1335.53</td>
@@ -2444,7 +2468,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1393.05</td>
 </tr>
 <tr>
-<td>302</td>
+<td>305</td>
 <td>Nanni Galli</td>
 <td>1411.39</td>
 <td>1396.15</td>
@@ -2452,7 +2476,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1409.39</td>
 </tr>
 <tr>
-<td>303</td>
+<td>306</td>
 <td>Jan Lammers</td>
 <td>1409.9</td>
 <td>1366.44</td>
@@ -2460,7 +2484,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1374.27</td>
 </tr>
 <tr>
-<td>304</td>
+<td>307</td>
 <td>Gino Bianco</td>
 <td>1409.61</td>
 <td>1360.27</td>
@@ -2468,7 +2492,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1402.04</td>
 </tr>
 <tr>
-<td>305</td>
+<td>308</td>
 <td>Duncan Hamilton</td>
 <td>1409.2</td>
 <td>1382.7</td>
@@ -2476,7 +2500,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1386.26</td>
 </tr>
 <tr>
-<td>306</td>
+<td>309</td>
 <td>Stefano Modena</td>
 <td>1406.28</td>
 <td>1416.76</td>
@@ -2484,7 +2508,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1347.15</td>
 </tr>
 <tr>
-<td>307</td>
+<td>310</td>
 <td>Pedro Diniz</td>
 <td>1405.87</td>
 <td>1379.3</td>
@@ -2492,7 +2516,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1330.35</td>
 </tr>
 <tr>
-<td>308</td>
+<td>311</td>
 <td>Jack Fairman</td>
 <td>1405.63</td>
 <td>1402.3</td>
@@ -2500,7 +2524,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1400.47</td>
 </tr>
 <tr>
-<td>309</td>
+<td>312</td>
 <td>Stefan Bellof</td>
 <td>1404.19</td>
 <td>1429.5</td>
@@ -2508,7 +2532,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1330.47</td>
 </tr>
 <tr>
-<td>310</td>
+<td>313</td>
 <td>Vern Schuppan</td>
 <td>1404.09</td>
 <td>1362.24</td>
@@ -2516,7 +2540,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1341.85</td>
 </tr>
 <tr>
-<td>311</td>
+<td>314</td>
 <td>Gerhard Mitter</td>
 <td>1403.65</td>
 <td>1405.23</td>
@@ -2524,7 +2548,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1400.47</td>
 </tr>
 <tr>
-<td>312</td>
+<td>315</td>
 <td>Ivor Bueb</td>
 <td>1403.03</td>
 <td>1406.15</td>
@@ -2532,7 +2556,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1396.79</td>
 </tr>
 <tr>
-<td>313</td>
+<td>316</td>
 <td>Bruce Halford</td>
 <td>1401.33</td>
 <td>1397.39</td>
@@ -2540,7 +2564,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1392.17</td>
 </tr>
 <tr>
-<td>314</td>
+<td>317</td>
 <td>Ivan Capelli</td>
 <td>1401.28</td>
 <td>1334.82</td>
@@ -2548,7 +2572,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1335.89</td>
 </tr>
 <tr>
-<td>315</td>
+<td>318</td>
 <td>Nelson Piquet Jr.</td>
 <td>1401.27</td>
 <td>1380.93</td>
@@ -2556,7 +2580,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1369.8</td>
 </tr>
 <tr>
-<td>316</td>
+<td>319</td>
 <td>Luciano Burti</td>
 <td>1400.6</td>
 <td>1328.01</td>
@@ -2564,7 +2588,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1424.39</td>
 </tr>
 <tr>
-<td>317</td>
+<td>320</td>
 <td>Maurício Gugelmin</td>
 <td>1399.35</td>
 <td>1331.15</td>
@@ -2572,7 +2596,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1381.31</td>
 </tr>
 <tr>
-<td>318</td>
+<td>321</td>
 <td>Pedro de la Rosa</td>
 <td>1398.87</td>
 <td>1218.05</td>
@@ -2580,7 +2604,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1323.61</td>
 </tr>
 <tr>
-<td>319</td>
+<td>322</td>
 <td>François Hesnault</td>
 <td>1398.8</td>
 <td>1353.06</td>
@@ -2588,7 +2612,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1384.79</td>
 </tr>
 <tr>
-<td>320</td>
+<td>323</td>
 <td>George Eaton</td>
 <td>1397.88</td>
 <td>1385.68</td>
@@ -2596,7 +2620,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1378.7</td>
 </tr>
 <tr>
-<td>321</td>
+<td>324</td>
 <td>Adrian Sutil</td>
 <td>1397.77</td>
 <td>1278.49</td>
@@ -2604,7 +2628,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1371.47</td>
 </tr>
 <tr>
-<td>322</td>
+<td>325</td>
 <td>Roberto Bussinello</td>
 <td>1397.55</td>
 <td>1399.24</td>
@@ -2612,7 +2636,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1394.17</td>
 </tr>
 <tr>
-<td>323</td>
+<td>326</td>
 <td>Marcus Ericsson</td>
 <td>1394.26</td>
 <td>1392.83</td>
@@ -2620,7 +2644,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1332.21</td>
 </tr>
 <tr>
-<td>324</td>
+<td>327</td>
 <td>Ricardo Rosset</td>
 <td>1393.93</td>
 <td>1312.18</td>
@@ -2628,7 +2652,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1342.15</td>
 </tr>
 <tr>
-<td>325</td>
+<td>328</td>
 <td>Giorgio Scarlatti</td>
 <td>1393.8</td>
 <td>1393.87</td>
@@ -2636,7 +2660,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1386.91</td>
 </tr>
 <tr>
-<td>326</td>
+<td>329</td>
 <td>Takuma Sato</td>
 <td>1393.49</td>
 <td>1316.77</td>
@@ -2644,7 +2668,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1352.75</td>
 </tr>
 <tr>
-<td>327</td>
+<td>330</td>
 <td>Andrea de Cesaris</td>
 <td>1393.24</td>
 <td>1281.53</td>
@@ -2652,7 +2676,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1379.42</td>
 </tr>
 <tr>
-<td>328</td>
+<td>331</td>
 <td>Ian Raby</td>
 <td>1393.18</td>
 <td>1388.5</td>
@@ -2660,7 +2684,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1386.24</td>
 </tr>
 <tr>
-<td>329</td>
+<td>332</td>
 <td>Jean-Pierre Jabouille</td>
 <td>1392.82</td>
 <td>1373.77</td>
@@ -2668,7 +2692,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1332.66</td>
 </tr>
 <tr>
-<td>330</td>
+<td>333</td>
 <td>Peter Whitehead</td>
 <td>1391.33</td>
 <td>1394.87</td>
@@ -2676,15 +2700,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1383.14</td>
 </tr>
 <tr>
-<td>331</td>
-<td>George Russell</td>
-<td>1390.85</td>
-<td>1397.93</td>
-<td>1447.21</td>
-<td>1327.42</td>
-</tr>
-<tr>
-<td>332</td>
+<td>334</td>
 <td>Lance Reventlow</td>
 <td>1388.62</td>
 <td>1384.37</td>
@@ -2692,7 +2708,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1388.94</td>
 </tr>
 <tr>
-<td>333</td>
+<td>335</td>
 <td>Lamberto Leoni</td>
 <td>1387.21</td>
 <td>1381.2</td>
@@ -2700,7 +2716,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1388.44</td>
 </tr>
 <tr>
-<td>334</td>
+<td>336</td>
 <td>Ukyo Katayama</td>
 <td>1386.77</td>
 <td>1291.82</td>
@@ -2708,7 +2724,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1329.55</td>
 </tr>
 <tr>
-<td>335</td>
+<td>337</td>
 <td>Piercarlo Ghinzani</td>
 <td>1386.71</td>
 <td>1261.92</td>
@@ -2716,7 +2732,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1354.98</td>
 </tr>
 <tr>
-<td>336</td>
+<td>338</td>
 <td>Ricardo Zonta</td>
 <td>1386.55</td>
 <td>1367.82</td>
@@ -2724,7 +2740,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1370.14</td>
 </tr>
 <tr>
-<td>337</td>
+<td>339</td>
 <td>Bruno Senna</td>
 <td>1386.52</td>
 <td>1421.54</td>
@@ -2732,7 +2748,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1270.09</td>
 </tr>
 <tr>
-<td>338</td>
+<td>340</td>
 <td>Roelof Wunderink</td>
 <td>1384.74</td>
 <td>1373.28</td>
@@ -2740,7 +2756,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1382.21</td>
 </tr>
 <tr>
-<td>339</td>
+<td>341</td>
 <td>Chico Landi</td>
 <td>1384.6</td>
 <td>1386.77</td>
@@ -2748,7 +2764,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1380.24</td>
 </tr>
 <tr>
-<td>340</td>
+<td>342</td>
 <td>Christian Klien</td>
 <td>1383.5</td>
 <td>1348.4</td>
@@ -2756,7 +2772,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1359.26</td>
 </tr>
 <tr>
-<td>341</td>
+<td>343</td>
 <td>Aguri Suzuki</td>
 <td>1383.35</td>
 <td>1337.47</td>
@@ -2764,7 +2780,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1356.38</td>
 </tr>
 <tr>
-<td>342</td>
+<td>344</td>
 <td>Ron Flockhart</td>
 <td>1383.35</td>
 <td>1389.41</td>
@@ -2772,7 +2788,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1368.47</td>
 </tr>
 <tr>
-<td>343</td>
+<td>345</td>
 <td>André Simon</td>
 <td>1382.0</td>
 <td>1385.58</td>
@@ -2780,7 +2796,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1374.85</td>
 </tr>
 <tr>
-<td>344</td>
+<td>346</td>
 <td>Esteban Gutiérrez</td>
 <td>1381.46</td>
 <td>1346.85</td>
@@ -2788,7 +2804,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1344.89</td>
 </tr>
 <tr>
-<td>345</td>
+<td>347</td>
 <td>Geoff Lees</td>
 <td>1381.26</td>
 <td>1377.46</td>
@@ -2796,7 +2812,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1377.71</td>
 </tr>
 <tr>
-<td>346</td>
+<td>348</td>
 <td>Clemar Bucci</td>
 <td>1379.87</td>
 <td>1378.51</td>
@@ -2804,7 +2820,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1375.41</td>
 </tr>
 <tr>
-<td>347</td>
+<td>349</td>
 <td>Frank Gardner</td>
 <td>1379.03</td>
 <td>1379.13</td>
@@ -2812,7 +2828,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1375.11</td>
 </tr>
 <tr>
-<td>348</td>
+<td>350</td>
 <td>Luis Pérez-Sala</td>
 <td>1379.02</td>
 <td>1361.2</td>
@@ -2820,7 +2836,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1348.37</td>
 </tr>
 <tr>
-<td>349</td>
+<td>351</td>
 <td>Richard Robarts</td>
 <td>1378.82</td>
 <td>1381.74</td>
@@ -2828,7 +2844,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1371.52</td>
 </tr>
 <tr>
-<td>350</td>
+<td>352</td>
 <td>Luigi Piotti</td>
 <td>1378.41</td>
 <td>1375.59</td>
@@ -2836,7 +2852,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1372.0</td>
 </tr>
 <tr>
-<td>351</td>
+<td>353</td>
 <td>Marc Gené</td>
 <td>1377.5</td>
 <td>1322.93</td>
@@ -2844,7 +2860,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1332.43</td>
 </tr>
 <tr>
-<td>352</td>
+<td>354</td>
 <td>Willy Mairesse</td>
 <td>1377.39</td>
 <td>1379.43</td>
@@ -2852,7 +2868,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1363.73</td>
 </tr>
 <tr>
-<td>353</td>
+<td>355</td>
 <td>Lella Lombardi</td>
 <td>1376.26</td>
 <td>1391.32</td>
@@ -2860,7 +2876,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1346.15</td>
 </tr>
 <tr>
-<td>354</td>
+<td>356</td>
 <td>Mike Parkes</td>
 <td>1376.0</td>
 <td>1391.0</td>
@@ -2868,7 +2884,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1345.33</td>
 </tr>
 <tr>
-<td>355</td>
+<td>357</td>
 <td>Brendon Hartley</td>
 <td>1375.53</td>
 <td>1375.62</td>
@@ -2876,7 +2892,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1311.82</td>
 </tr>
 <tr>
-<td>356</td>
+<td>358</td>
 <td>Dave Kennedy</td>
 <td>1373.85</td>
 <td>1347.11</td>
@@ -2884,7 +2900,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1356.83</td>
 </tr>
 <tr>
-<td>357</td>
+<td>359</td>
 <td>David Purley</td>
 <td>1369.87</td>
 <td>1373.06</td>
@@ -2892,7 +2908,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1359.57</td>
 </tr>
 <tr>
-<td>358</td>
+<td>360</td>
 <td>Eliseo Salazar</td>
 <td>1369.63</td>
 <td>1337.77</td>
@@ -2900,15 +2916,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1363.32</td>
 </tr>
 <tr>
-<td>359</td>
-<td>Nicholas Latifi</td>
-<td>1369.18</td>
-<td>1276.98</td>
-<td>1531.28</td>
-<td>1299.28</td>
-</tr>
-<tr>
-<td>360</td>
+<td>361</td>
 <td>Christian Danner</td>
 <td>1368.21</td>
 <td>1308.83</td>
@@ -2916,7 +2924,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1345.75</td>
 </tr>
 <tr>
-<td>361</td>
+<td>362</td>
 <td>Bertrand Gachot</td>
 <td>1368.11</td>
 <td>1257.57</td>
@@ -2924,7 +2932,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1328.63</td>
 </tr>
 <tr>
-<td>362</td>
+<td>363</td>
 <td>Chuck Daigh</td>
 <td>1366.34</td>
 <td>1344.46</td>
@@ -2932,7 +2940,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1361.99</td>
 </tr>
 <tr>
-<td>363</td>
+<td>364</td>
 <td>Huub Rothengatter</td>
 <td>1366.26</td>
 <td>1335.94</td>
@@ -2940,7 +2948,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1366.13</td>
 </tr>
 <tr>
-<td>364</td>
+<td>365</td>
 <td>Bernard Collomb</td>
 <td>1365.81</td>
 <td>1368.27</td>
@@ -2948,7 +2956,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1360.88</td>
 </tr>
 <tr>
-<td>365</td>
+<td>366</td>
 <td>Cristiano da Matta</td>
 <td>1365.0</td>
 <td>1297.19</td>
@@ -2956,7 +2964,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1374.71</td>
 </tr>
 <tr>
-<td>366</td>
+<td>367</td>
 <td>Pascal Wehrlein</td>
 <td>1363.82</td>
 <td>1328.4</td>
@@ -2964,7 +2972,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1320.0</td>
 </tr>
 <tr>
-<td>367</td>
+<td>368</td>
+<td>Nicholas Latifi</td>
+<td>1363.19</td>
+<td>1264.59</td>
+<td>1531.28</td>
+<td>1293.69</td>
+</tr>
+<tr>
+<td>369</td>
 <td>Patrick Gaillard</td>
 <td>1362.67</td>
 <td>1359.64</td>
@@ -2972,7 +2988,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1340.65</td>
 </tr>
 <tr>
-<td>368</td>
+<td>370</td>
 <td>Olivier Beretta</td>
 <td>1360.97</td>
 <td>1390.96</td>
@@ -2980,7 +2996,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1301.01</td>
 </tr>
 <tr>
-<td>369</td>
+<td>371</td>
 <td>Franco Rol</td>
 <td>1360.27</td>
 <td>1360.56</td>
@@ -2988,7 +3004,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1358.63</td>
 </tr>
 <tr>
-<td>370</td>
+<td>372</td>
 <td>Walt Hansgen</td>
 <td>1359.77</td>
 <td>1362.76</td>
@@ -2996,7 +3012,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1353.79</td>
 </tr>
 <tr>
-<td>371</td>
+<td>373</td>
 <td>Roberto Moreno</td>
 <td>1359.74</td>
 <td>1284.04</td>
@@ -3004,7 +3020,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1318.09</td>
 </tr>
 <tr>
-<td>372</td>
+<td>374</td>
 <td>Jo Gartner</td>
 <td>1357.95</td>
 <td>1366.65</td>
@@ -3012,7 +3028,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1336.35</td>
 </tr>
 <tr>
-<td>373</td>
+<td>375</td>
 <td>Allan McNish</td>
 <td>1357.46</td>
 <td>1291.33</td>
@@ -3020,7 +3036,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1333.87</td>
 </tr>
 <tr>
-<td>374</td>
+<td>376</td>
 <td>Roberto Guerrero</td>
 <td>1355.9</td>
 <td>1381.31</td>
@@ -3028,7 +3044,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1305.09</td>
 </tr>
 <tr>
-<td>375</td>
+<td>377</td>
 <td>Manfred Winkelhock</td>
 <td>1354.59</td>
 <td>1325.79</td>
@@ -3036,7 +3052,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1341.12</td>
 </tr>
 <tr>
-<td>376</td>
+<td>378</td>
 <td>Carlos Menditeguy</td>
 <td>1353.73</td>
 <td>1359.08</td>
@@ -3044,7 +3060,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1343.02</td>
 </tr>
 <tr>
-<td>377</td>
+<td>379</td>
 <td>Emilio de Villota</td>
 <td>1353.69</td>
 <td>1351.32</td>
@@ -3052,7 +3068,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1353.44</td>
 </tr>
 <tr>
-<td>378</td>
+<td>380</td>
 <td>Mike Thackwell</td>
 <td>1353.59</td>
 <td>1351.31</td>
@@ -3060,7 +3076,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1353.74</td>
 </tr>
 <tr>
-<td>379</td>
+<td>381</td>
 <td>David Walker</td>
 <td>1353.37</td>
 <td>1343.0</td>
@@ -3068,7 +3084,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1342.29</td>
 </tr>
 <tr>
-<td>380</td>
+<td>382</td>
 <td>Sam Tingle</td>
 <td>1351.36</td>
 <td>1353.72</td>
@@ -3076,7 +3092,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1346.64</td>
 </tr>
 <tr>
-<td>381</td>
+<td>383</td>
 <td>Peter de Klerk</td>
 <td>1351.32</td>
 <td>1353.22</td>
@@ -3084,7 +3100,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1347.52</td>
 </tr>
 <tr>
-<td>382</td>
+<td>384</td>
 <td>Miguel Ángel Guerra</td>
 <td>1349.83</td>
 <td>1319.97</td>
@@ -3092,7 +3108,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1345.11</td>
 </tr>
 <tr>
-<td>383</td>
+<td>385</td>
 <td>Tim Parnell</td>
 <td>1349.58</td>
 <td>1351.83</td>
@@ -3100,7 +3116,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1345.07</td>
 </tr>
 <tr>
-<td>384</td>
+<td>386</td>
 <td>Alan Stacey</td>
 <td>1348.5</td>
 <td>1351.09</td>
@@ -3108,7 +3124,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1343.31</td>
 </tr>
 <tr>
-<td>385</td>
+<td>387</td>
 <td>Tony Trimmer</td>
 <td>1347.74</td>
 <td>1327.12</td>
@@ -3116,7 +3132,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1327.49</td>
 </tr>
 <tr>
-<td>386</td>
+<td>388</td>
 <td>Conny Andersson</td>
 <td>1347.66</td>
 <td>1342.94</td>
@@ -3124,7 +3140,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1349.49</td>
 </tr>
 <tr>
-<td>387</td>
+<td>389</td>
 <td>Gastón Mazzacane</td>
 <td>1346.2</td>
 <td>1293.23</td>
@@ -3132,7 +3148,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1344.38</td>
 </tr>
 <tr>
-<td>388</td>
+<td>390</td>
 <td>Jackie Pretorius</td>
 <td>1346.1</td>
 <td>1345.53</td>
@@ -3140,7 +3156,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1346.21</td>
 </tr>
 <tr>
-<td>389</td>
+<td>391</td>
 <td>Dave Charlton</td>
 <td>1345.89</td>
 <td>1341.68</td>
@@ -3148,7 +3164,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1344.85</td>
 </tr>
 <tr>
-<td>390</td>
+<td>392</td>
 <td>Skip Barber</td>
 <td>1344.98</td>
 <td>1337.02</td>
@@ -3156,7 +3172,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1334.5</td>
 </tr>
 <tr>
-<td>391</td>
+<td>393</td>
 <td>Alexander Rossi</td>
 <td>1344.74</td>
 <td>1307.33</td>
@@ -3164,7 +3180,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1324.68</td>
 </tr>
 <tr>
-<td>392</td>
+<td>394</td>
 <td>Boy Lunger</td>
 <td>1344.56</td>
 <td>1334.99</td>
@@ -3172,7 +3188,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1348.13</td>
 </tr>
 <tr>
-<td>393</td>
+<td>395</td>
 <td>Élie Bayol</td>
 <td>1344.12</td>
 <td>1348.0</td>
@@ -3180,7 +3196,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1336.37</td>
 </tr>
 <tr>
-<td>394</td>
+<td>396</td>
 <td>Keith Greene</td>
 <td>1341.23</td>
 <td>1339.2</td>
@@ -3188,7 +3204,15 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1340.87</td>
 </tr>
 <tr>
-<td>395</td>
+<td>397</td>
+<td>Mick Schumacher</td>
+<td>1340.44</td>
+<td>1359.41</td>
+<td>1388.96</td>
+<td>1272.96</td>
+</tr>
+<tr>
+<td>398</td>
 <td>Vitantonio Liuzzi</td>
 <td>1338.47</td>
 <td>1161.96</td>
@@ -3196,7 +3220,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1322.3</td>
 </tr>
 <tr>
-<td>396</td>
+<td>399</td>
 <td>Edgar Barth</td>
 <td>1337.22</td>
 <td>1338.79</td>
@@ -3204,7 +3228,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1333.12</td>
 </tr>
 <tr>
-<td>397</td>
+<td>400</td>
 <td>Luca Badoer</td>
 <td>1335.44</td>
 <td>1275.77</td>
@@ -3212,7 +3236,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1297.98</td>
 </tr>
 <tr>
-<td>398</td>
+<td>401</td>
 <td>Nicolas Kiesa</td>
 <td>1333.71</td>
 <td>1312.75</td>
@@ -3220,7 +3244,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1335.68</td>
 </tr>
 <tr>
-<td>399</td>
+<td>402</td>
 <td>Larry Perkins</td>
 <td>1333.46</td>
 <td>1338.13</td>
@@ -3228,7 +3252,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1317.54</td>
 </tr>
 <tr>
-<td>400</td>
+<td>403</td>
 <td>Jos Verstappen</td>
 <td>1332.34</td>
 <td>1276.67</td>
@@ -3236,7 +3260,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1314.6</td>
 </tr>
 <tr>
-<td>401</td>
+<td>404</td>
 <td>Corrado Fabi</td>
 <td>1330.96</td>
 <td>1329.81</td>
@@ -3244,7 +3268,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1303.93</td>
 </tr>
 <tr>
-<td>402</td>
+<td>405</td>
 <td>Michael Bleekemolen</td>
 <td>1328.9</td>
 <td>1309.83</td>
@@ -3252,7 +3276,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1324.57</td>
 </tr>
 <tr>
-<td>403</td>
+<td>406</td>
 <td>François Migault</td>
 <td>1328.45</td>
 <td>1330.98</td>
@@ -3260,7 +3284,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1313.48</td>
 </tr>
 <tr>
-<td>404</td>
+<td>407</td>
 <td>Sergey Sirotkin</td>
 <td>1327.7</td>
 <td>1325.8</td>
@@ -3268,7 +3292,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1303.05</td>
 </tr>
 <tr>
-<td>405</td>
+<td>408</td>
 <td>Paul Belmondo</td>
 <td>1327.39</td>
 <td>1239.33</td>
@@ -3276,7 +3300,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1350.66</td>
 </tr>
 <tr>
-<td>406</td>
+<td>409</td>
 <td>Mike Wilds</td>
 <td>1326.58</td>
 <td>1311.51</td>
@@ -3284,7 +3308,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1315.02</td>
 </tr>
 <tr>
-<td>407</td>
+<td>410</td>
 <td>Allen Berg</td>
 <td>1325.48</td>
 <td>1318.07</td>
@@ -3292,7 +3316,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1313.3</td>
 </tr>
 <tr>
-<td>408</td>
+<td>411</td>
 <td>Roberto Merhi</td>
 <td>1324.06</td>
 <td>1306.97</td>
@@ -3300,7 +3324,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1301.55</td>
 </tr>
 <tr>
-<td>409</td>
+<td>412</td>
 <td>Scott Speed</td>
 <td>1322.1</td>
 <td>1241.81</td>
@@ -3308,7 +3332,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1324.59</td>
 </tr>
 <tr>
-<td>410</td>
+<td>413</td>
 <td>Tiago Monteiro</td>
 <td>1319.41</td>
 <td>1241.48</td>
@@ -3316,7 +3340,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1312.34</td>
 </tr>
 <tr>
-<td>411</td>
+<td>414</td>
 <td>Jules Bianchi</td>
 <td>1319.34</td>
 <td>1278.79</td>
@@ -3324,7 +3348,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1271.81</td>
 </tr>
 <tr>
-<td>412</td>
+<td>415</td>
 <td>Gabriele Tarquini</td>
 <td>1316.04</td>
 <td>1277.31</td>
@@ -3332,7 +3356,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1288.36</td>
 </tr>
 <tr>
-<td>413</td>
+<td>416</td>
 <td>Toranosuke Takagi</td>
 <td>1308.13</td>
 <td>1233.22</td>
@@ -3340,7 +3364,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1308.24</td>
 </tr>
 <tr>
-<td>414</td>
+<td>417</td>
 <td>Paolo Barilla</td>
 <td>1308.11</td>
 <td>1292.98</td>
@@ -3348,7 +3372,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1298.64</td>
 </tr>
 <tr>
-<td>415</td>
+<td>418</td>
 <td>Beppe Gabbiani</td>
 <td>1307.01</td>
 <td>1310.34</td>
@@ -3356,7 +3380,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1298.88</td>
 </tr>
 <tr>
-<td>416</td>
+<td>419</td>
 <td>Julian Bailey</td>
 <td>1303.44</td>
 <td>1308.74</td>
@@ -3364,7 +3388,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1287.65</td>
 </tr>
 <tr>
-<td>417</td>
+<td>420</td>
 <td>Ralph Firman</td>
 <td>1298.52</td>
 <td>1277.15</td>
@@ -3372,7 +3396,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1286.97</td>
 </tr>
 <tr>
-<td>418</td>
+<td>421</td>
 <td>Antônio Pizzonia</td>
 <td>1294.58</td>
 <td>1289.46</td>
@@ -3380,7 +3404,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1279.18</td>
 </tr>
 <tr>
-<td>419</td>
+<td>422</td>
 <td>Tommy Byrne</td>
 <td>1292.55</td>
 <td>1276.21</td>
@@ -3388,7 +3412,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1290.07</td>
 </tr>
 <tr>
-<td>420</td>
+<td>423</td>
 <td>Karun Chandhok</td>
 <td>1291.46</td>
 <td>1266.98</td>
@@ -3396,7 +3420,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1274.74</td>
 </tr>
 <tr>
-<td>421</td>
+<td>424</td>
 <td>Kenny Acheson</td>
 <td>1290.99</td>
 <td>1292.67</td>
@@ -3404,7 +3428,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1285.63</td>
 </tr>
 <tr>
-<td>422</td>
+<td>425</td>
 <td>Jérôme d'Ambrosio</td>
 <td>1290.55</td>
 <td>1204.34</td>
@@ -3412,7 +3436,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1230.77</td>
 </tr>
 <tr>
-<td>423</td>
+<td>426</td>
 <td>David Brabham</td>
 <td>1288.83</td>
 <td>1282.49</td>
@@ -3420,7 +3444,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1260.19</td>
 </tr>
 <tr>
-<td>424</td>
+<td>427</td>
 <td>Fabrizio Barbazza</td>
 <td>1287.39</td>
 <td>1287.21</td>
@@ -3428,7 +3452,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1255.44</td>
 </tr>
 <tr>
-<td>425</td>
+<td>428</td>
 <td>Massimiliano Papis</td>
 <td>1286.58</td>
 <td>1300.31</td>
@@ -3436,7 +3460,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1251.51</td>
 </tr>
 <tr>
-<td>426</td>
+<td>429</td>
 <td>Domenico Schiattarella</td>
 <td>1279.94</td>
 <td>1282.07</td>
@@ -3444,7 +3468,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1273.06</td>
 </tr>
 <tr>
-<td>427</td>
+<td>430</td>
 <td>Bernd Schneider</td>
 <td>1279.6</td>
 <td>1260.92</td>
@@ -3452,7 +3476,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1265.61</td>
 </tr>
 <tr>
-<td>428</td>
+<td>431</td>
 <td>Oscar Larrauri</td>
 <td>1278.71</td>
 <td>1256.8</td>
@@ -3460,7 +3484,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1268.11</td>
 </tr>
 <tr>
-<td>429</td>
+<td>432</td>
 <td>Taki Inoue</td>
 <td>1278.33</td>
 <td>1286.38</td>
@@ -3468,7 +3492,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1246.35</td>
 </tr>
 <tr>
-<td>430</td>
+<td>433</td>
 <td>Will Stevens</td>
 <td>1276.85</td>
 <td>1268.86</td>
@@ -3476,7 +3500,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1273.98</td>
 </tr>
 <tr>
-<td>431</td>
+<td>434</td>
 <td>Esteban Tuero</td>
 <td>1272.69</td>
 <td>1240.31</td>
@@ -3484,7 +3508,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1260.51</td>
 </tr>
 <tr>
-<td>432</td>
+<td>435</td>
 <td>Charles Pic</td>
 <td>1267.48</td>
 <td>1186.36</td>
@@ -3492,7 +3516,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1231.33</td>
 </tr>
 <tr>
-<td>433</td>
+<td>436</td>
 <td>Andrea Montermini</td>
 <td>1266.96</td>
 <td>1255.12</td>
@@ -3500,7 +3524,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1253.51</td>
 </tr>
 <tr>
-<td>434</td>
+<td>437</td>
 <td>Alex Yoong</td>
 <td>1266.1</td>
 <td>1239.26</td>
@@ -3508,7 +3532,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1245.73</td>
 </tr>
 <tr>
-<td>435</td>
+<td>438</td>
 <td>Enrique Bernoldi</td>
 <td>1265.58</td>
 <td>1253.92</td>
@@ -3516,7 +3540,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1252.4</td>
 </tr>
 <tr>
-<td>436</td>
+<td>439</td>
 <td>Adrián Campos</td>
 <td>1264.25</td>
 <td>1258.96</td>
@@ -3524,7 +3548,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1250.59</td>
 </tr>
 <tr>
-<td>437</td>
+<td>440</td>
 <td>Peter Hirt</td>
 <td>1263.6</td>
 <td>1264.15</td>
@@ -3532,7 +3556,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1260.39</td>
 </tr>
 <tr>
-<td>438</td>
+<td>441</td>
 <td>Max Chilton</td>
 <td>1262.75</td>
 <td>1230.96</td>
@@ -3540,7 +3564,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1244.79</td>
 </tr>
 <tr>
-<td>439</td>
+<td>442</td>
 <td>Zsolt Baumgartner</td>
 <td>1260.65</td>
 <td>1214.41</td>
@@ -3548,7 +3572,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1254.62</td>
 </tr>
 <tr>
-<td>440</td>
+<td>443</td>
 <td>Tarso Marques</td>
 <td>1258.6</td>
 <td>1252.38</td>
@@ -3556,15 +3580,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1246.77</td>
 </tr>
 <tr>
-<td>441</td>
-<td>Mick Schumacher</td>
-<td>1257.82</td>
-<td>1241.07</td>
-<td>1310.25</td>
-<td>1222.14</td>
-</tr>
-<tr>
-<td>442</td>
+<td>444</td>
 <td>Christijan Albers</td>
 <td>1256.69</td>
 <td>1212.77</td>
@@ -3572,7 +3588,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1241.21</td>
 </tr>
 <tr>
-<td>443</td>
+<td>445</td>
 <td>Riccardo Paletti</td>
 <td>1254.68</td>
 <td>1257.12</td>
@@ -3580,7 +3596,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1249.8</td>
 </tr>
 <tr>
-<td>444</td>
+<td>446</td>
 <td>Rio Haryanto</td>
 <td>1251.81</td>
 <td>1219.85</td>
@@ -3588,7 +3604,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1245.25</td>
 </tr>
 <tr>
-<td>445</td>
+<td>447</td>
 <td>Peter Walker</td>
 <td>1250.96</td>
 <td>1252.79</td>
@@ -3596,7 +3612,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1247.31</td>
 </tr>
 <tr>
-<td>446</td>
+<td>448</td>
 <td>Giedo van der Garde</td>
 <td>1250.4</td>
 <td>1198.31</td>
@@ -3604,7 +3620,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1232.3</td>
 </tr>
 <tr>
-<td>447</td>
+<td>449</td>
 <td>Pierre-Henri Raphanel</td>
 <td>1250.36</td>
 <td>1254.05</td>
@@ -3612,7 +3628,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1242.97</td>
 </tr>
 <tr>
-<td>448</td>
+<td>450</td>
 <td>Jean-Marc Gounon</td>
 <td>1247.61</td>
 <td>1262.21</td>
@@ -3620,7 +3636,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1218.4</td>
 </tr>
 <tr>
-<td>449</td>
+<td>451</td>
 <td>Giorgio Pantano</td>
 <td>1246.5</td>
 <td>1190.9</td>
@@ -3628,7 +3644,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1231.48</td>
 </tr>
 <tr>
-<td>450</td>
+<td>452</td>
 <td>Andrea Chiesa</td>
 <td>1245.93</td>
 <td>1234.03</td>
@@ -3636,7 +3652,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1247.94</td>
 </tr>
 <tr>
-<td>451</td>
+<td>453</td>
 <td>Gregor Foitek</td>
 <td>1245.59</td>
 <td>1247.4</td>
@@ -3644,7 +3660,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1220.33</td>
 </tr>
 <tr>
-<td>452</td>
+<td>454</td>
 <td>David Murray</td>
 <td>1244.34</td>
 <td>1243.45</td>
@@ -3652,7 +3668,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1244.17</td>
 </tr>
 <tr>
-<td>453</td>
+<td>455</td>
 <td>Tom Belsø</td>
 <td>1241.8</td>
 <td>1245.45</td>
@@ -3660,7 +3676,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1234.5</td>
 </tr>
 <tr>
-<td>454</td>
+<td>456</td>
 <td>Narain Karthikeyan</td>
 <td>1236.08</td>
 <td>1136.83</td>
@@ -3668,7 +3684,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1234.56</td>
 </tr>
 <tr>
-<td>455</td>
+<td>457</td>
 <td>Giovanni Lavaggi</td>
 <td>1235.41</td>
 <td>1221.55</td>
@@ -3676,7 +3692,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1221.85</td>
 </tr>
 <tr>
-<td>456</td>
+<td>458</td>
 <td>Michael Bartels</td>
 <td>1234.55</td>
 <td>1220.39</td>
@@ -3684,7 +3700,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1227.68</td>
 </tr>
 <tr>
-<td>457</td>
+<td>459</td>
 <td>Lucas di Grassi</td>
 <td>1231.79</td>
 <td>1202.69</td>
@@ -3692,7 +3708,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1217.29</td>
 </tr>
 <tr>
-<td>458</td>
+<td>460</td>
 <td>Robert Doornbos</td>
 <td>1230.7</td>
 <td>1238.34</td>
@@ -3700,7 +3716,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1215.43</td>
 </tr>
 <tr>
-<td>459</td>
+<td>461</td>
 <td>Justin Wilson</td>
 <td>1229.75</td>
 <td>1242.66</td>
@@ -3708,7 +3724,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1203.91</td>
 </tr>
 <tr>
-<td>460</td>
+<td>462</td>
 <td>Patrick Friesacher</td>
 <td>1218.41</td>
 <td>1204.49</td>
@@ -3716,7 +3732,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1201.94</td>
 </tr>
 <tr>
-<td>461</td>
+<td>463</td>
 <td>Anthony Davidson</td>
 <td>1211.06</td>
 <td>1243.53</td>
@@ -3724,7 +3740,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1141.01</td>
 </tr>
 <tr>
-<td>462</td>
+<td>464</td>
 <td>Yuji Ide</td>
 <td>1204.25</td>
 <td>1199.38</td>
@@ -3732,7 +3748,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1176.6</td>
 </tr>
 <tr>
-<td>463</td>
+<td>465</td>
 <td>Franck Montagny</td>
 <td>1197.15</td>
 <td>1198.53</td>
@@ -3740,7 +3756,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1183.6</td>
 </tr>
 <tr>
-<td>464</td>
+<td>466</td>
 <td>Sakon Yamamoto</td>
 <td>1194.08</td>
 <td>1196.58</td>
@@ -3748,7 +3764,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1181.18</td>
 </tr>
 <tr>
-<td>465</td>
+<td>467</td>
 <td>Gianmaria Bruni</td>
 <td>1189.27</td>
 <td>1158.84</td>
@@ -3756,7 +3772,7 @@ Data current as of 6:27:35 AM (UTC) Mon Mar 3, 2022 (2022 Bahrain Grand Prix)<br
 <td>1177.96</td>
 </tr>
 <tr>
-<td>466</td>
+<td>468</td>
 <td>Nikita Mazepin</td>
 <td>1144.92</td>
 <td>1116.57</td>

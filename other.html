@@ -20,15 +20,10 @@ Mekapaedia - Other
 </div>
 <br><br>
 <div id=innertext>
-I last updated this site on Sunday 15th of May, 2022.
+Last updated Thursday 13th of April, 2023.
 <br><br>
-This website is run off of a small <a href="https://www.scaleway.com">Scaleway</a> VPS Linux server, utilising <a href="https://www.debian.org/releases/stretch/">Debian 9 Stretch</a> as the operating system.<br>
-The webserver is a fork of <a href="http://acme.com/software/thttpd/">thttpd</a>, a great static/CGI http server, called <a href="https://github.com/blueness/sthttpd">sthttpd</a>; which adds a few security patches.<br>
-SSL/HTTPS is handled through <a href="https://www.stunnel.org/">stunnel</a> using a <a href="https://letsencrypt.org/">Let's Encrypt</a> certificate. Basically, this simply redirects the HTTPS queries to the static HTTP server, 
-meaning that the HTTP server doesn't need to deal with the specifics of SSL and the SSL layer doesn't need to know anything about HTTP. Simple and secure, hopefully.<br><br>
-
-The website itself is all just static hand-coded HTML and CSS. It's not the most efficient nor pretty; but it's simple, fast, portable, secure, and I think does the job fine.<br><br>
-
+Webserver: <a href="https://github.com/blueness/sthttpd">sthttpd</a> with <a href="https://www.stunnel.org/">stunnel</a> and <a href="https://letsencrypt.org/">Let's Encrypt</a><br> 
+Hosted by <a href="https://www.scaleway.com">Scaleway</a><br>
 </div>
 </div>
 </body>
